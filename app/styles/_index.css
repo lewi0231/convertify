@@ -150,8 +150,14 @@ nav a:hover {
 .icons-wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 3vh;
     gap: 2em;
+}
+
+.icon {
+    vertical-align: middle;
+    margin-right: 1em;
 }
 
 .tools-btn {

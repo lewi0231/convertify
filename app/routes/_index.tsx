@@ -1,4 +1,5 @@
 import { Link } from "@remix-run/react";
+import { RiBankCardLine, RiCheckboxCircleLine } from "@remixicon/react";
 
 import type { LinksFunction } from "@remix-run/server-runtime";
 
@@ -73,8 +74,22 @@ const IndexPage = () => {
             conversion tools, making the process simple and efficient.
           </p>
           <div className="icons-wrapper">
-            <p>14-day free trial</p>
-            <p>No credit card required</p>
+            <div className="icon-content-wrapper">
+              <RiCheckboxCircleLine
+                size={20} // set custom `width` and `height`
+                color="var(--gray-01)" // set `fill` color
+                className="icon"
+              />
+              14-day free trial
+            </div>
+            <div className="icon-content-wrapper">
+              <RiBankCardLine
+                size="20px"
+                color="var(--gray-01)"
+                className="icon"
+              />
+              No credit card required
+            </div>
           </div>
           <button className="tools-btn">Explore tools</button>
         </div>
